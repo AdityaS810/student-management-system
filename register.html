@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register - Student Management System</title>
+  <link rel="stylesheet" href="css/styles.css" />  
+  <link rel="icon" href="assets/favicon2.png" />
+
+</head>
+<body class="landing-bg">
+  <header class="header login-header">
+    <h1 class="nav-title">Student Management System Registration</h1>
+  </header>
+  <main class="main-content">
+    <section class="login-container">
+      <form id="registerForm" novalidate>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required autofocus />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+        <button type="submit" class="btn-primary">Register</button>
+        <p id="registerError" class="error-message" aria-live="polite"></p>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+  </main>
+  <footer class="footer">&copy; 2025 ADHD - Student Management System</footer>
+  <script src="js/auth.js"></script>
+  <script src="js/landing-bg.js"></script>
+</body>
+</html>
